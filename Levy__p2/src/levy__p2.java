@@ -1,7 +1,10 @@
 
 import java.util.Scanner;
+import java.text.DecimalFormat;
 
 public class levy__p2 {
+	
+	private static DecimalFormat df2 = new DecimalFormat("#.##");
 
 
 	public static void main(String[] args) {
@@ -17,8 +20,8 @@ public class levy__p2 {
 	
 	if ( c == 1) {
 		double BMI = (703 * wt) / (ht * ht);
-		System.out.print("Your BMI is: ");
-		System.out.print(BMI);
+		System.out.println("Your BMI is: " + df2.format(BMI));
+		
 		
 		
 	}
@@ -26,8 +29,7 @@ public class levy__p2 {
 		double wt2 = (wt / 2.2);
 		double ht2 = (ht / 39.37);
 		double BMI = (wt2) / (ht2 * ht2);
-		System.out.print("Your BMI is: ");
-		System.out.println(BMI);
+		System.out.println("Your BMI is: " + df2.format(BMI));
 		
 	}
 	
